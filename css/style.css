@@ -5,7 +5,11 @@
     margin: 100px 50px;
     padding: 20px;
     box-sizing: border-box;
-
+    display: flex;
+    /* flex-direction: column-reverse; */
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
 }
 /* .child1{
     background-color: rgb(10, 125, 85);
@@ -34,13 +38,14 @@
     height: 150px;
     width: 150px;
     border: 2px dotted goldenrod;
-    display: inline-block;
 }
 .child1{
     background-color: brown;
+    flex-basis: 50%;
 }
 .child2{
     background-color: bisque;
+    flex-basis: 50%;
 }
 .child3{
     background-color: blueviolet;
