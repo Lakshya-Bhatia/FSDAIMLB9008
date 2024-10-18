@@ -55,8 +55,11 @@ console.dir(document)
  h1.style.backgroundColor="cyan"
  console.log(h1)
  div[0].appendChild(h1)
- const image=document.createElement("img")
- image.src ='./download.jpeg'
- image.setAttribute("height","200")
+
+ //image insertion
+
+ const img=document.createElement("img")
+ img.src ='./download.jpeg'
+ img.setAttribute("height","200")
  console.log(img)
  div[0].appendChild(img)
