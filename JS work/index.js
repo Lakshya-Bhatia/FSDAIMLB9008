@@ -47,19 +47,30 @@
 // const result=selectlanguage('c')
 // console.log(result)
 
-console.dir(document)
- const div=document.getElementsByClassName("parent")
- div[0].innerHTML="<h2 style=color:red> hello Dom</h2>"
- const h1=document.createElement("h1")
- h1.innerText="this is dom"
- h1.style.backgroundColor="cyan"
- console.log(h1)
- div[0].appendChild(h1)
+// console.dir(document)
+//  const div=document.getElementsByClassName("parent")
+//  div[0].innerHTML="<h2 style=color:red> hello Dom</h2>"
+//  const h1=document.createElement("h1")
+//  h1.innerText="this is dom"
+//  h1.style.backgroundColor="cyan"
+//  console.log(h1)
+//  div[0].appendChild(h1)
 
- //image insertion
+//  //image insertion
 
- const img=document.createElement("img")
- img.src ='./download.jpeg'
- img.setAttribute("height","200")
- console.log(img)
- div[0].appendChild(img)
+//  const img=document.createElement("img")
+//  img.src ='./download.jpeg'
+//  img.setAttribute("height","200")
+//  console.log(img)
+//  div[0].appendChild(img)
+
+const promise=new Promise((resolve,reject)=>{
+    let a=12
+    if (a>10){
+        resolve("resolved")
+    }
+    else{
+        reject("rejected")
+    }
+});
+promise.then((msg)=>console.log(msg)).catch(error=>console.log(error))
