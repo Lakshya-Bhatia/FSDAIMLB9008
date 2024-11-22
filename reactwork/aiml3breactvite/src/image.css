@@ -1,0 +1,13 @@
+.imageCard{
+    height: 5500px;
+    width: 500px;
+    border: 2px solid red;
+}
+.catdiv{
+    border: 1px solid black;
+    height: 150px;
+    width: 150px;
+    margin-left: 100px;
+    margin-top: 50;
+    background-color: brown;
+}
