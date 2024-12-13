@@ -27,14 +27,25 @@
 import React, { useState } from 'react'
 import Registration from './registration'
 // import registration from './registration'
+import Login from './login';
+import {BrowserRouter,Routes,Route} from 'react-router-dom';
+import MainLayout from './MainLayout';
 
 function App() {
   const [shareData , setShareData]=useState();
   return (
 
     <div>
+      <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<MainLayout />} >
+      <Route path='/login' element={<Login  rData={shareData}/>}   />
+      <Route path='/reg' element={<Registration/>}   /></Route>
 
-      <Registration regData={setShareData} />
+
+      </Routes>
+      </BrowserRouter>
+      
       
     </div>
   )

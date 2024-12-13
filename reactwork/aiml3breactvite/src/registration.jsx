@@ -11,13 +11,16 @@ function Registration ({regData}) {
     e.preventDefault();
     
     const data={name,pass,email}
+    alert('hi:  '+email+"  name:  "+name+'  pass:  '+pass)
     regData(data);
+    userData(data);
     
     console.log(data)
   }
   return (
     <div>
-      Registration
+      
+      <div style={{height:'30px',width:'230px',}}><h1 style={{color:'#edcc77',backgroundColor:'#bec6ed'}}><u>Registration</u></h1></div><br></br>
       <form>
       <div class="form-group">
     <label for="exampleInputmode">Name</label>
